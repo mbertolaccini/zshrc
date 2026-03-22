@@ -36,3 +36,10 @@ if [[ "$(limactl ls -q "$LIMA_INSTANCE" 2>/dev/null)" == "$LIMA_INSTANCE" ]]; th
   DOCKER_HOST=$(limactl list "$LIMA_INSTANCE" --format 'unix://{{.Dir}}/sock/docker.sock')
   export DOCKER_HOST
 fi
+
+
+##############################
+# Avoid saving the commands that are preceded by space in history
+##############################
+
+setopt hist_ignore_space
