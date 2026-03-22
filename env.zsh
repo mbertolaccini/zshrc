@@ -22,10 +22,6 @@ path=('/opt/homebrew/bin' $path)
 path=('/Applications/Visual Studio Code.app/Contents/Resources/app/bin' $path)
 
 
-# Export to sub-processes (make it inherited by child processes)
-export PATH
-
-
 ###############################
 # Export docker lima context if the VM already exists
 ###############################
